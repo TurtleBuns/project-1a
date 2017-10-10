@@ -1,0 +1,377 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: inherit;
+    color:inherit;
+    list-style: none;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('font/playfairdisplay-regular-webfont.eot');
+    src: url('font/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('font/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('font/playfairdisplay-regular-webfont.ttf') format('truetype'),
+         url('font/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('font/playfairdisplay-italic-webfont.eot');
+    src: url('font/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('font/playfairdisplay-italic-webfont.woff') format('woff'),
+         url('font/playfairdisplay-italic-webfont.ttf') format('truetype'),
+         url('font/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('font/raleway-light-webfont.eot');
+    src: url('font/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway-light-webfont.woff2') format('woff2'),
+         url('font/raleway-light-webfont.woff') format('woff'),
+         url('font/raleway-light-webfont.ttf') format('truetype'),
+         url('font/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+body{
+    font-family: 'ralewaylight';
+    color: #2d2d2d;
+}
+h1, h2, h3 ,h4{
+    font-family: 'playfair_displayregular';
+}
+
+em{
+    font-weight: 100;
+    font-family: 'playfair_displayitalic';
+}
+
+
+
+
+
+header{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    background: #ffffff;
+    min-width: 100%;
+    height: 120px;
+    margin: 0px 0px 0px 0px;
+    flex-wrap: nowrap;
+    
+}
+header ul{
+    order:1;
+    padding-left: 0px;
+    margin-left: 10;
+    margin-right: 10%;
+    width: 450px;
+    display: inline-flex;
+}
+header li {
+    color: #e2574c;
+    font-size:.9rem ;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: red;
+    padding: 12px;
+}
+
+input:hover,a:hover{
+    cursor: pointer;
+    color:#b64036;
+}
+
+header #cart{
+    order:2;
+    height:60px;
+    padding:0px 40px 0px 0px ;
+}
+#logo {
+    order:-1;
+    padding: 0px 0px 0px 0px;
+    height: 65px;
+    margin: 10px 1px 1px 40px;
+}
+
+
+
+.idk{
+    background-image: url(assets/img/banner-girl.png),url(assets/img/flower-bkgd.jpg);
+    background-repeat: no-repeat ,repeat;
+    background-position: center top, center;
+    padding: 20% 0px;   
+}
+.hero{
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+}
+h1.hero{
+    font-size:  80px;
+    margin-top: 70px
+}
+h4.hero{
+    font-size: 25px;
+    font-family: 'ralewaylight';
+}
+ 
+
+
+
+
+
+
+.description{
+    text-align: center;
+   padding: 120px 20%;
+}
+ .description p{
+    color: ;
+     font-size: 27px;
+     margin-top: 20px;
+}
+.subtitle {
+    font-size: 50px;
+    color: ;
+    text-align: center
+}
+
+.subtitle.white{
+    color: #ffffff;
+    padding-top: 50px
+}
+
+
+
+
+
+.category{
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0px;
+    overflow: hidden;
+}
+.category.big {
+   color: #ffffff;
+   min-width: 49.8%;
+}
+.category.small{
+    color:#ffffff;
+    min-width: 24.8%;
+}
+.category.top{
+    float: right;
+}
+.category.bot{
+    float: left;
+}
+.category.big.men{
+    float: left;
+    background-image: url(assets/img/mens-category.jpg);
+    border-bottom: 0px solid #ffffff;
+    margin-bottom: 4px;
+    box-shadow: -
+}
+.category.big.women{
+    float: right;
+    background-image: url(assets/img/womens-category.jpg);
+}
+.category.trends{
+    background-image: url(assets/img/trends-category.jpg);
+    border-bottom: 0px solid #ffffff;
+    border-right: 0px solid #ffffff;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+.category.glasses{
+    background-image: url(assets/img/glasses-category.jpg);
+    border-bottom: 0px solid #ffffff;
+    margin-bottom: 4px;
+}
+.category.sale{
+    background-image: url(assets/img/sale-category.jpg);
+    border-right: 0px solid #ffffff;
+    margin-right: 4px;
+}
+.category.bags{
+    background-image: url(assets/img/bags-category.jpg);
+}
+
+
+
+
+
+.selection h2{
+    padding-right: 5px;
+    text-align: center;
+    width: 100%;
+    margin-top: 59%;
+    margin-bottom: 5%;
+    
+}
+#products{
+    display: inline-flex;
+    text-align: center;
+    justify-content:space-around;
+    align-items: center; 
+    width: 100%;
+    margin-bottom: 100px;
+    
+}
+.product h4{
+    font-size:1.4rem;
+    font-weight: 300;
+    color: #e2574c;
+}
+.product p{
+    font-weight: 900;
+    font-size: .8rem;
+    color: #969696;
+}
+.title{
+    margin-top: 100%;
+    width: 250px;
+}
+.product{
+     background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+.product:nth-of-type(1){
+    background-image: url(assets/img/checked-stretch-dress.jpg);
+}
+.product:nth-of-type(2){
+    background-image: url(assets/img/blue-hipster-backpack.jpg);
+}
+.product:nth-of-type(3){
+    background-image:url(assets/img/demin-overall-shorts.jpg);
+}
+.product:nth-of-type(4){
+    background-image: url(assets/img/pink-dotted-dress.jpg);
+}
+
+
+
+
+#updates{
+    text-align: center;
+    background-image: url(assets/img/wave-bkgd.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+#updates p{
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    min-width: 33%;
+    border-radius: 20px;
+    margin: 0px 35%;
+}
+.email{
+    border:0;
+    float: left;
+    font-size: 16px;
+    border-radius: 20px;
+    width: 70%;
+    padding: 10px 10px 10px 20px;
+}
+.submit{
+    border: 0;
+    font-size: 1em;
+    background-color: lightcoral;
+    color: #ffffff;
+    width: 25%;
+    border-radius: 20px 20px;
+    padding:10px 10px 10px 10px;
+    margin: 4px 4px 4px 4px;
+}
+input{
+    display: inline;
+}
+
+
+
+
+.social{
+    align-self: flex-end;
+    justify-content: flex-end;
+    padding: 15px 50px 0px 0px;
+}
+#loc{
+    color: #969696;
+}
+footer p{
+    display: flex;
+    align-content: space-around;
+    flex-direction:column;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:left;
+    font-weight: 900;
+    color:#ffffff;
+    background-color: #242424;
+    height: 200px;
+    margin-top: 10px;
+    padding: 40px 40px 40px 40px; 
+}
+#info{
+    text-decoration: underline;
+}
+.social a::before{
+    font-family: fontawesome;
+    font-size: .8rem;
+    padding-right: 15px;
+}
+.social.fb a::before{
+    content:"\f09a"
+}
+.social.tw a::before{
+    content:"\f099"
+}
+.social.in a::before{
+    content:"\f16d"
+}
+.social.pi a::before{
+    content:"\f0d2"
+}
+.social.g a::before{
+    content:"\f1a0"
+}
+
